@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* For main.php */
+
+/* anything for the header */
+header {
+  display: block;
+  width: 100%;
+  height: 10em;
+  text-align: center;
+  background-color: white;
+  margin-top: 0;
+  justify-content: center;
+}
+
+/* for the imgs */
+main {
+  display: flex;
+  height: auto;
+  overflow: scroll;
+}
+
+.bookCard {
+  padding: 1em;
+}
+
+img {
+  height: 500px;
+  width: 300px;
+}
+
+/* the wrapper for the main section of the page */
+.mainWrapper {
+  display: flex;
+  height: auto;
+  width: 100%;
+}
+
+/* the two elements for the main section of the page */
+aside {
+  margin-left: 0;
+  width: 30%;
+  height: 10%;
+  box-sizing: border-box;
+}
+
+main {
+  width: 70%;
+  height: auto;
+  padding: 0.5em;
+}
+
+/* for the deleteBook page */
+.deleteList {
+  margin-left: 2em;
+}
+
+button {
+  height: 1.5em;
+  width: 7em;
+}
+
+/* start of links */
+.loginWrapper {
+  display: flex;
+  height: 10em;
+  width: 100%;
+  flex-direction: row-reverse;
+}
+
+li {
+  list-style: none;
+  margin: 3em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  height: 10px;
+  width: 10px;
+}
+
+a:hover {
+  color: darkgrey;
+}
+
+.eventsWrapper {
+  height: 100%;
+  width: 100%;
+  padding-left: 5px;
+  margin: 0;
+}
+/* end of links */
+
+/* forms displays */
+.sampleFormBox {
+  margin: 0 auto;
+  padding: 2em;
+}
+
+form {
+  flex-direction: column;
+}
+
+fieldset {
+  height: auto;
+  width: 60vw;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  border: none;
+}
+
+input, select {
+  width: 20em;
+}
+
+/* anything for the footer */
+footer {
+  height: 10em;
+  width: 100%;
+}
+/* main.php end */
+
+/* index.php start */
+
+
+
+/* index.php end */
+
+
+/* For mobile view */
+@media only screen and (max-width: 600px) {
+  .mainWrapper {
+    display: block;
+  }
+  aside {
+    width: 100%;
+    display: flex;
+  }
+  .mainWrapper main {
+    flex-direction: column;
+    width: 100%;
+  }
+  .sampleFormBox fieldset {
+    width: 90%;
+    margin: 0;
+    height: 40em;
+  }
+  .sampleFormBox label, input {
+    width: 100%;
+  }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="sampleFormBox">
+		<form action="../controller/processReg.php" method="POST">
+			<fieldset>
+				<legend>Registration Details</legend>
+				<label for="fname">First name:</label>
+				<input type="text" name="fname" required>
+
+				<label for="lname">Last name:</label>
+				<input type="text" name="lname" required>
+
+				<label for="email">Email:</label>
+				<input type="email" name="email" required>
+
+			</fieldset>
+			<fieldset>
+				<legend>Login Details</legend>
+				<label for="username">Username:</label>
+				<input type="text" name="username" required>
+
+				<label for="pass">Password:</label>
+				<input type="text" name="pass" required>
+
+				<label for="accessRights">Access Role:</label>
+				<input type="text" name="accessRights" required>
+				<br>
+				<input type="submit">
+				<br>
+				<a href="main.php">Home</a>
+			</fieldset>
+		</form>
+	</div>
+	<br>
+
+</body>
+
+</html>
